@@ -3,6 +3,8 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+import 'bootstrap'
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
@@ -16,7 +18,9 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap
-//= require_tree ./sitewide
+// = require jquery
+// = require bootstrap
+// = require rails-ujs
+// = require turbolinks
+// = require_tree .
+import 'application.scss'
