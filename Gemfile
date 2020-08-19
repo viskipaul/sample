@@ -20,6 +20,7 @@ gem 'fog',                     '1.36.0'
 group :development, :test do
   gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 4.0.1'
 end
 
 group :development do
@@ -38,6 +39,8 @@ group :test do
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
+  gem 'database_cleaner-active_record'
+  gem 'database_cleaner'
 end
 
 group :production do
