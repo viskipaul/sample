@@ -3,6 +3,8 @@ require 'common_methods'
 
 RSpec.describe 'User tries to log in and', type: :feature do
 
+    let!(:user) { FactoryBot.create(:user) }
+
     before :each do
         visit 'localhost:3000'
     end
@@ -19,10 +21,10 @@ RSpec.describe 'User tries to log in and', type: :feature do
     end
 
     it 'signs in' do
+        # binding.pry
         login_user
         expect(page).to have_text 'LoginTest'
-        expect(page).to have_text 'Account'
-        #expect(page).to have_field('Account', type: 'a')
+        expect(page).to have_selector(:link_or_button, "Account")
     end
 
     it 'enters invalid information' do
@@ -35,5 +37,6 @@ RSpec.describe 'User tries to log in and', type: :feature do
         expect(page).to have_content "Log in"
         expect(page).to have_field("session_email")
         expect(page).to have_field("session_email")
+        expect(page).not_to have_selector(:link_or_button, "Account")
     end
 end

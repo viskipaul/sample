@@ -62,4 +62,6 @@ Rails.application.configure do
   
   # Allow connections to local server.
   config.hosts.clear
+
+  config.factory_bot.definition_file_paths = ["spec/factories"]
 end

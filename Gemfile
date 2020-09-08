@@ -21,6 +21,7 @@ group :development, :test do
   gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 4.0.1'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -41,6 +42,7 @@ group :test do
   gem 'guard-minitest',           '2.4.6'
   gem 'database_cleaner-active_record'
   gem 'database_cleaner'
+  gem 'cucumber-rails', require: false
 end
 
 group :production do
