@@ -420,16 +420,9 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
-<<<<<<< HEAD
-<<<<<<< HEAD
     subexec (0.2.3)
     sys-uname (1.2.1)
       ffi (>= 1.0.0)
-=======
->>>>>>> 3d0436af61f821c5636ddc209af74e8de81cda53
-=======
-    subexec (0.2.3)
->>>>>>> cf577ce0918739838f6f8024b9c8067031356f10
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
